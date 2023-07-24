@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="bg-slate-800 h-15 flex items-center p-4">
       <ul>
-        <li><Link href="/todos">todos</Link></li>
+        <li><Link href="/users">users</Link></li>
       </ul>
     </nav>
   )
