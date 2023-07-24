@@ -7,21 +7,17 @@ export default async function Users() {
   const users = await usersData
 
   return (
-  <section>
-    <h2 className="mt-20">
-        <Link href="/" className="font-bold">Voltar para Home</Link>
-    </h2>
-    <br />
-    {users.map(user => {
+    <section className="flex flex-col gap-2 p-4">
+      <h1 className="font-bold text-2xl">USERS</h1>
+      {users.map(user => {
         return (
-            <>
-                <p key={user.id}>
-                    <Link href={`/users/${user.id}`}>{user.name}</Link>
-                </p>
-                <br />
-            </>
+          <>
+            <p key={user.id}>
+              <Link href={`/users/${user.id}`}>{user.name}</Link>
+            </p>
+          </>
         )
-    })}
-  </section>
-)
+      })}
+    </section>
+  )
 }
