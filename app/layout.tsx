@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'HOME',
   description: 'Repositório para Meetup Next',
 }
-//test
+
 export default function RootLayout({
   children,
 }: {

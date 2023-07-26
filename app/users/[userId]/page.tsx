@@ -31,7 +31,7 @@ export default async function TodosUsuario({ params: { userId } }: Params) {
 
   return (
     <section className="flex flex-col gap-2 p-4">
-      <h1 className="font-bold text-2xl">POSTS DO USER {user.name.toLocaleUpperCase()}</h1>
+      <h1 className="font-bold text-2xl">POSTS DO USER {user.name.toUpperCase()}</h1>
       <Suspense fallback={<h2>Loading...</h2>}>
         <UserPosts promise={userPostsData} />
       </Suspense>

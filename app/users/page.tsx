@@ -11,11 +11,9 @@ export default async function Users() {
       <h1 className="font-bold text-2xl">USERS</h1>
       {users.map(user => {
         return (
-          <>
-            <p key={user.id}>
-              <Link href={`/users/${user.id}`}>{user.name}</Link>
-            </p>
-          </>
+          <p key={user.id} className="border rounded p-4">
+            <Link href={`/users/${user.id}`}>{user.name}</Link>
+          </p>
         )
       })}
     </section>

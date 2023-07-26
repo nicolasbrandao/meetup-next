@@ -7,11 +7,9 @@ export default async function UserPosts({ promise }: Props) {
 
   return posts.map(post => {
     return (
-      <>
-        <p key={post.id}>
-          {post.title}
-        </p>
-      </>
+      <p key={post.id} className="border rounded p-4">
+        {post.title}
+      </p>
     )
   })
 }
